@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ok-z</title><link href="oknwn.github.io/" rel="alternate"></link><link href="oknwn.github.io/feeds/blog.atom.xml" rel="self"></link><id>oknwn.github.io/</id><updated>2015-05-26T08:30:00+09:00</updated><entry><title>Python画像リンク</title><link href="oknwn.github.io/posts/2015/05/26/image-link-test/" rel="alternate"></link><updated>2015-05-26T08:30:00+09:00</updated><author><name>ok-z</name></author><id>tag:,2015-05-26:oknwn.github.io/posts/2015/05/26/image-link-test/</id><summary type="html">&lt;hr /&gt;
+&lt;h1&gt;画像のリンク&lt;/h1&gt;
+&lt;h6&gt;&lt;img alt="ねこ" src="oknwn.github.io/images/fat.jpg" /&gt;&lt;/h6&gt;
+&lt;h6&gt;&lt;a href="oknwn.github.io/images/fat.jpg"&gt;ねこ&lt;/a&gt;&lt;/h6&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;###### ![ねこ]( {filename}/images/fat.jpg )
+###### [ねこ]( {filename}/images/fat.jpg )
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category><category term="pelican"></category></entry><entry><title>Python関連資料</title><link href="oknwn.github.io/posts/2015/05/17/2015-05-17-python-books/" rel="alternate"></link><updated>2015-05-17T22:30:00+09:00</updated><author><name>ok-z</name></author><id>tag:,2015-05-17:oknwn.github.io/posts/2015/05/17/2015-05-17-python-books/</id><summary type="html">&lt;hr /&gt;
+&lt;h1&gt;サイト&lt;/h1&gt;
+&lt;h6&gt;&lt;a href="http://www.codecademy.com/"&gt;Codecademy&lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;プログラミング学習には一番人気ではないでしょうか。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1&gt;これまでに買ったPython関連の書籍&lt;/h1&gt;
+&lt;h6&gt;&lt;a href="http://www.amazon.co.jp/Python-3-ebook/dp/B00H372KEC/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;amp;sr=&amp;amp;qid="&gt;みんなのPython 第3版 Kindle版&lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;この書籍と&lt;a href="http://www.codecademy.com/"&gt;Codecademy&lt;/a&gt;とで、結構勉強になりました。&lt;/p&gt;
+&lt;h6&gt;&lt;a href="http://www.amazon.co.jp/Learning-Python-Mark-Lutz-ebook/dp/B00DDZPC9S/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;amp;sr=8-1&amp;amp;qid=1431868195"&gt;Learning Python  Kindle版&lt;/a&gt;&lt;/h6&gt;
+&lt;p&gt;辞書のような使い方をするために購入。&lt;/p&gt;</summary><category term="python"></category></entry><entry><title>Pelicanメモ</title><link href="oknwn.github.io/posts/2015/05/17/2015-05-17-1830/" rel="alternate"></link><updated>2015-05-17T18:30:00+09:00</updated><author><name>ok-z</name></author><id>tag:,2015-05-17:oknwn.github.io/posts/2015/05/17/2015-05-17-1830/</id><summary type="html">&lt;h1&gt;Pelican&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.sotm.jp/2014/01/04/Pelican-Markdown-GithubPages-install-guide/"&gt;Pelican + Markdown + GitHub Pagesで管理するブログの作り方&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;とても参考になった。感謝。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/3.5.0/"&gt;Pelican 3.5.0のドキュメント&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://www.slideshare.net/atsuoishimoto/pycon-pelican"&gt;Pelicanによる www.python.jpの構築&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican/wiki/Tutorials"&gt;Tutorials&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pelican関連のチュートリアル? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pythonhosted.org/Markdown/"&gt;Python-Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Fabric&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://docs.fabfile.org/"&gt;Fabric&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://shiumachi.hatenablog.com/entry/20130414/1365920515"&gt;今日からすぐに使えるデプロイ・システム管理ツール Fabric 入門&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry><entry><title>初のPelicanブログ</title><link href="oknwn.github.io/posts/2015/05/17/first-post/" rel="alternate"></link><updated>2015-05-17T08:30:00+09:00</updated><author><name>ok-z</name></author><id>tag:,2015-05-17:oknwn.github.io/posts/2015/05/17/first-post/</id><summary type="html">&lt;h1&gt;Pelican&lt;/h1&gt;
+&lt;p&gt;Pelicanで投稿&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="python"></category></entry></feed>
