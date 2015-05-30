@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Youtube動画貼り付け - ok-z</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://oknwn.github.io/posts/2015/05/31/youtube-test/">
+
+        <meta name="author" content="ok-z" />
+        <meta name="keywords" content="python,pelican,youtube" />
+        <meta name="description" content="Youtube動画貼り付け" />
+
+        <meta property="og:site_name" content="ok-z" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Youtube動画貼り付け"/>
+        <meta property="og:url" content="http://oknwn.github.io/posts/2015/05/31/youtube-test/"/>
+        <meta property="og:description" content="Youtube動画貼り付け"/>
+        <meta property="article:published_time" content="2015-05-31" />
+            <meta property="article:section" content="Blog" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="pelican" />
+            <meta property="article:tag" content="youtube" />
+            <meta property="article:author" content="ok-z" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://oknwn.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://oknwn.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://oknwn.github.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://oknwn.github.io/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://oknwn.github.io/" class="navbar-brand">
+ok-z            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="http://oknwn.github.io/category/blog.html">Blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://oknwn.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://oknwn.github.io/posts/2015/05/31/youtube-test/"
+                       rel="bookmark"
+                       title="Permalink to Youtube動画貼り付け">
+                        Youtube動画貼り付け
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2015-05-31T08:30:00+09:00"> 2015-05-31(日)</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://oknwn.github.io/tag/python.html">python</a>
+        /
+	<a href="http://oknwn.github.io/tag/pelican.html">pelican</a>
+        /
+	<a href="http://oknwn.github.io/tag/youtube.html">youtube</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <hr />
+<h2>Embedly Cards v0.2</h2>
+<p>Youtubeへの動画貼り付けに<a href="http://iza.ac/posts/2014/04/embedly-cards-v02-markdown-support/">Embedly Cards v0.2
+</a>
+を使ってみた。markdownとreStructuredTextのどちらの記法にも対応しており、 responsiveもサポートしている。SlideshareやGoogle マップなども埋め込める。</p>
+<p><a class='embedly-card' data-card-chrome='0' href='http://iza.ac/posts/2014/04/embedly-cards-v02-markdown-support/'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+<h3>インストールと設定</h3>
+<div class="highlight"><pre><span class="code-line"><span class="n">pip</span> <span class="n">install</span> <span class="n">embedly</span><span class="o">-</span><span class="n">cards</span></span>
+</pre></div>
+
+
+<p>インストール後、<code>pelicanconf.py</code>に以下のように設定を追記する。reStructuredTextの場合は、<code>PLUGINS</code>に<code>embedly_cards</code>を追加。</p>
+<div class="highlight"><pre><span class="code-line"><span class="kn">from</span> <span class="nn">embedly_cards</span> <span class="kn">import</span> <span class="n">EmbedlyCardExtension</span></span>
+<span class="code-line"></span>
+<span class="code-line"><span class="n">MD_EXTENSIONS</span> <span class="o">=</span> <span class="p">[</span></span>
+<span class="code-line">    <span class="s">&#39;codehilite(css_class=highlight)&#39;</span><span class="p">,</span></span>
+<span class="code-line">    <span class="s">&#39;extra&#39;</span><span class="p">,</span></span>
+<span class="code-line">    <span class="n">EmbedlyCardExtension</span><span class="p">()</span></span>
+<span class="code-line">    <span class="p">]</span></span>
+</pre></div>
+
+
+<h3>記述方法</h3>
+<div class="highlight"><pre><span class="code-line">[!embedlycard](url)</span>
+</pre></div>
+
+
+<p>または</p>
+<div class="highlight"><pre><span class="code-line">[!embedlycard?chrome=1](url)</span>
+</pre></div>
+
+
+<p><code>chrome=1</code>を書くと動画の周囲に枠が表示される。</p>
+<h3>例その1</h3>
+<div class="highlight"><pre><span class="code-line">[!embedlycard](https://youtu.be/26Bma3d0wko)</span>
+</pre></div>
+
+
+<p><a class='embedly-card' data-card-chrome='0' href='https://youtu.be/26Bma3d0wko'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+<h3>例その2</h3>
+<div class="highlight"><pre><span class="code-line">[!embedlycard?chrome=1](https://youtu.be/26Bma3d0wko)</span>
+</pre></div>
+
+
+<p><a class='embedly-card' data-card-chrome='1' href='https://youtu.be/26Bma3d0wko'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+<h3>Slideshare</h3>
+<p><a class='embedly-card' data-card-chrome='0' href='http://www.slideshare.net/atsuoishimoto/pycon-pelican'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+<h3>Google マップ</h3>
+<p><a class='embedly-card' data-card-chrome='0' href='https://goo.gl/maps/s3eu2'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+<h3>ブログなど</h3>
+<p><a class='embedly-card' data-card-chrome='0' href='http://blog.sotm.jp/2014/01/04/Pelican-Markdown-GithubPages-install-guide/'></a>
+            <script>
+            !function(a){
+                var b="embedly-platform",c="script";
+                if(!a.getElementById(b)){
+                    var d=a.createElement(c);
+                    d.id=b;
+                    d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";
+                    var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}
+                }(document);
+            </script>
+            </p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
+                <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="list-group-item"><a href="http://oknwn.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="http://oknwn.github.io/tag/pelican.html">
+                            pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-1">
+                        <a href="http://oknwn.github.io/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="http://oknwn.github.io/tag/youtube.html">
+                            youtube
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2015 ok-z
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://oknwn.github.io/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://oknwn.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://oknwn.github.io/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
